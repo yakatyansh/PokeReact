@@ -39,7 +39,7 @@ const App = () => {
             if (Searchterm ===''){
               return pokemonStats
             }
-            else if(pokemonStats.name[0].toLowerCase().includes(Searchterm.toLowerCase())){
+            else if(pokemonStats.name.toLowerCase().includes(Searchterm[0].toLowerCase())){
               return pokemonStats
             }
           }).map( (pokemonStats, index) => 
